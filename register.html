@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="icon" href="./img/favicon.png" type="image/png" />
+  <title>Code yourself - change yourself</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/flaticon.css" />
+  <link rel="stylesheet" href="css/themify-icons.css" />
+  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <!-- main css -->
+  <link rel="stylesheet" href="css/style.css" />
+  
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+  <!--================ Start Header Menu Area =================-->
+  <header class="header_area white-header">
+    <div class="main_menu">
+      <div class="search_input" id="search_input_box">
+        <div class="container">
+          <form class="d-flex justify-content-between" method="" action="">
+            <input type="text" class="form-control" id="search_input" placeholder="Search Here" />
+            <button type="submit" class="btn"></button>
+            <span class="ti-close" id="close_search" title="Close Search"></span>
+          </form>
+        </div>
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a class="navbar-brand" href="home.html">
+            <img class="logo-2" src="./img/Asset 1.png" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+            <ul class="nav navbar-nav menu_nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link">
+                  <form class="searchbox display_1" style="margin-top: 10px;">
+                    <input type="search" placeholder="Axtarin......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                    <input type="submit" class="searchbox-submit" value="" style="background-color: rgba(10, 89, 115, 0.84);;">
+                    <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+                </form>
+                <form class="searchbox_2 display_2" style="margin-top: 10px;">
+                  <input type="search" placeholder="Axtarin......" name="search" class="searchbox-input" onkeyup="buttonUp();" required>
+                  <input type="submit" class="searchbox-submit" value="" style="background-color: rgba(10, 89, 115, 0.84);;">
+                  <span class="searchbox-icon"><i class="fa fa-search" aria-hidden="true"></i></span>
+              </form>
+                </a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link"  href="./blog.html">BLOQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./login.html">Daxİl ol</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Qeydİyyat</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!--================ End Header Menu Area =================-->
+
+  <!--Login Section -->
+  <div id="login">
+    <h3 class="text-center text-white pt-5">Register form</h3>
+    <div class="container">
+      <div id="login-row" class="row justify-content-center align-items-center">
+        <div id="login-column" class="col-md-6">
+          <div id="login-box" class="col-md-12">
+            <form id="register-form" class="form" action="" method="post"><br><br>
+              <h3 class="text-center text-info">YENI HESAB</h3><br><br>
+              <div class="form-group">
+                <label for="username" class="text-info">İstifadəçi adı:</label><br>
+                <input type="text" name="username" id="username" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="email" class="text-info">Email:</label><br>
+                <input type="email" name="email" id="mail" class="form-control">
+              </div>
+              <!-- <div class="form-group">
+                <label for="surname" class="text-info">Soyad:</label><br>
+                <input type="text" name="surname" id="surname" class="form-control">
+              </div> -->
+              <div class="form-group">
+                <label for="password" class="text-info">Şifrə:</label><br>
+                <input type="password" name="password" id="password" class="form-control">
+              </div>
+              <div class="form-group">
+                <label for="remember-me" class="text-info"><span>Yadda saxla</span> <span><input id="remember-me"
+                      name="remember-me" type="checkbox"></span></label><br>
+                <button id="register-submit-btn" type="button" name="submit" class="btn btn-info btn-md"
+                  value="təsdiqlə">təsdiqlə</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4" style="background: rgba(56, 90, 100, 0.92); margin-top: 200px;">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+<div class="container">
+      <!-- Grid row -->
+      <div class="row">
+
+
+        <hr class="clearfix w-100 d-md-none pb-3">
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
+  
+          <ul class="list-unstyled footer_ul_li_a">
+            <li>
+              <a href="#!">Haqqımızda</a>
+            </li>
+            <li>
+              <a href="#!">Blog</a>
+            </li>
+            <li>
+              <a href="#!">Faydalı</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Grid column -->
+  
+        <!-- Grid column -->
+        <div class="col-md-3 mb-md-0 mb-3">
+          <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
+  
+          <ul class="list-unstyled footer_ul_li_a">
+            <li>
+              <a href="#!">Çalışmalar</a>
+            </li>
+            <li>
+              <a href="#!">Testlər</a>
+            </li>
+            <li>
+              <a href="#!">Müsahibə Sualları</a>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+        <!-- Grid column -->
+        <div class="col-md-6 mt-md-0 mt-3">
+          <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
+  
+          <ul class="list-unstyled footer_ul_li_a">
+            <li>
+              <a href="#!">Tel:(055) 555 55 55 (whatsapp)</a>
+            </li>
+            <li>
+              <a href="#!">Email: info@codeyourself.tech</a>
+            </li>
+            <li class="footer_ul_li_a_paddding">
+              <a target="_blank" href="https://www.facebook.com/codeyourself1/"><i class="ti-facebook"></i></a>
+  
+              <a target="_blank" href="https://www.instagram.com/code_yourself/"><i class="ti-instagram"></i></a>
+  
+              <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><i class="ti-linkedin"></i></a> 
+  
+              <a target="_blank" href="https://t.me/codeyourself"><i class="fa fa-telegram"></i></a> 
+  
+              <a target="_blank" href="https://twitter.com/code_yourself"><i class="ti-twitter"></i></a> 
+            </li>
+          </ul> 
+  
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+</div>
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;">
+    Copyright 2020 - code yourself
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+  <script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+  <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+  <script src="js/owl-carousel-thumb.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/mail-script.js"></script>
+  <script src='./vendors/main/index.js'></script>
+  <!--gmaps Js-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+  <script src="js/gmaps.min.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="./js/search.js"></script>
+  <script src="./vendors/main/index.js"></script>
+</body>
+
+</html>
