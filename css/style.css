@@ -3863,8 +3863,13 @@ form.example::after {
     margin-top: 30px;
   } 
   .footer_h5{
-    color: rgba(251, 251, 251, 1);
+    color: #ffae00;
+    font-size: 23px;
+   margin-bottom: 25px;
   }
+.footer_li{
+	margin-bottom: 18px;
+     }
   .footer_ul_li_a  a{
     color:rgba(255, 255, 255, 0.76);
   }
