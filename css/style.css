@@ -32,7 +32,10 @@ body {
   background: rgba(248, 248, 248, 1);
 }
 
-h1,
+h1 {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  color: #0a5973; },
 h2,
 h3,
 h4,
