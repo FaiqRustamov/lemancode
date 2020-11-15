@@ -19,44 +19,133 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-    crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/flaticon.css" />
-  <link rel="stylesheet" href="css/themify-icons.css" />
-  <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
-  <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+   
+     
+  
     
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <style>
 
+
+
+
+
+.searchbar{
+  position: relative;
+}
+
+.searchbar input[type="text"]{
+  border: 0;
+  padding: 0;
+  width: 0px;
+  height: 35px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.searchbar .icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+}
+@media (max-width: 991px){
+  .searchbar .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+}
+}
+.searchbar .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.banner img{
+  width: 100%;
+  height: 350px;
+}
+
+.searchbar .icon.active{
+  background: #ffae00;
+  transition: all 0.3s ease;
+}
+
+.searchbar input[type="text"].active{
+  width: 250px;
+  padding: 0 10px;
+  transition: all 0.5s 0.2s ease;
+}
+
+@media screen and (max-width: 730px){
+  .wrapper .navbar{
+    padding: 0px;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+  .wrapper .navbar .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .searchbar .icon{
+    margin-right: -20px;
+  }
+}
+
+.matgin_style{
+  margin-top:24px;
+}
+.footer_h5 {
+    color: #ffae00;
+    font-size: 23px;
+    margin-bottom: 25px;
+}
+.footer_li {
+    margin-bottom: 18px;
+}
+
 </style>
 <body>
-  <!--================ Start Header Menu Area =================-->
-  <header class="header_area">
-    <div class="main_menu">
-      <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
-        <div class="container-fluid navbar_padding">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="icon-bar"></span> <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
-            <ul class="nav navbar-nav menu_nav ml-auto">
+
+
+  
+ <!--================ Start Header Menu Area =================-->
+ <header class="header_area">
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
+      <div class="container-fluid navbar_padding">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="icon-bar"></span> <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+          <ul class="nav navbar-nav menu_nav ml-auto">
             <li class="nav-item matgin_style">
               <div class="searchbar">
                 <input type="text" placeholder="Axtarin...">
@@ -65,54 +154,52 @@
                 </div>
               </div>
             </li>
-              
-              <li class="nav-item">
-                <a class="nav-link"  href="./blog.html">Bloq</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./login.html">Giriş</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="./register.html">Qeydiyyat</a>
-              </li>
-            </ul>
-          </div>
+            
+            <li class="nav-item">
+              <a class="nav-link"  href="./blog.html">Bloq</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./login.html">Giriş</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./register.html">Qeydiyyat</a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </div>
-  </header>
-  <!--================ End Header Menu Area =================-->
+      </div>
+    </nav>
+  </div>
+</header>
+<!--================ End Header Menu Area =================-->
 
-  <!--================ Start Home Banner Area =================-->
-  <section class="home_banner_area">
-    <div class="banner_inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="banner_content flout-left">
-              <!-- <p class="text">
-                İnsan sanki kodlaşdırılmış texniki bir məhsuldur. Bu məhsulun inkişaf etməsi və dəyişməsi
-                üçün o, yalnız öyrənməlidir. Təklif edirik ki, özünüzü dəyişmək üçün elə məhz kodlaşdırmadan
-                başlayasınız.
-              </p> -->
-              <h1 class="text-uppercase mt-4 mb-5" >
-                <br> ÖZÜN KODLA, <br><br> ÖZÜNÜ KODLA, <br><br> ÖZÜNÜ DƏYİŞ!
-              </h1>
-              
-              <!-- 
-              <div>
-                <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a>
-              </div>
-              -->
+<!--================ Start Home Banner Area =================-->
+<section class="home_banner_area">
+  <div class="banner_inner">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="banner_content flout-left">
+            <!-- <p class="text">
+              İnsan sanki kodlaşdırılmış texniki bir məhsuldur. Bu məhsulun inkişaf etməsi və dəyişməsi
+              üçün o, yalnız öyrənməlidir. Təklif edirik ki, özünüzü dəyişmək üçün elə məhz kodlaşdırmadan
+              başlayasınız.
+            </p> -->
+            <h1 class="text-uppercase mt-4 mb-5" >
+              <br> ÖZÜN KODLA, <br><br> ÖZÜNÜ KODLA, <br><br> ÖZÜNÜ DƏYİŞ!
+            </h1>
+            
+            <!-- 
+            <div>
+              <a href="#" class="primary-btn ml-sm-3 ml-0">see course</a>
             </div>
+            -->
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <!--================ End Home Banner Area =================-->
-
-  
+  </div>
+</section>
+<!--================ End Home Banner Area =================-->
 
 
   <!--================ Start Feature Area =================-->
@@ -333,10 +420,6 @@
   </div>
   <!--================ End Testimonial Area =================-->
 
-
-
-
-  
 <!-- Footer -->
 <footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 20px;">
 
@@ -434,12 +517,21 @@
 
 <footer>
    <!-- Copyright -->
-  <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;"> <span class="glyphicon glyphicon-heart" style="color:red;font-size: 18px;"></span> ilə Azərbaycanda hazırlanıb ©2021
+  <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;">  <i class="fa fa-heart" style="color:red;font-size: 18px;"></i> ilə Azərbaycanda hazırlanıb ©2021
   </div>
   <!-- Copyright -->
   </footer>
 
-<!------------------------------------------------------------------------------------------------------------------------------------->
+
+  <script>
+$(".fa-search").click(function(){
+   $(".icon").toggleClass("active");
+  $("input[type='text']").toggleClass("active");
+});
+  </script>
+
+
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
