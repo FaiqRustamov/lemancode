@@ -35,7 +35,7 @@ body {
 h1 {
   font-family: "Fira Sans", sans-serif;
   font-weight: 600;
-  color: #0a5973; },
+  color: #0a5973; }
 h2,
 h3,
 h4,
@@ -3856,7 +3856,7 @@ form.example::after {
   } */
 
   /* --------- */
-  .footer_icon_23 li a{
+  /* .footer_icon_23 li a{
     padding: 20px;
     font-size: 20px;
     color: white;
@@ -3873,7 +3873,7 @@ form.example::after {
 .footer_ul_li_a_paddding a{
   color:rgba(255, 255, 255, 0.76);
     padding-left: 10px;
-}
+} */
   
 
 .card_style>hr {
@@ -4244,6 +4244,136 @@ padding: 0 30px;
 }
 
 
+  .footer_icon_23 li a{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  .footer_icon_23 li{
+    margin-top: 30px;
+  } 
+  .footer_h5{
+    color: #ffae00;
+    font-size: 23px;
+   margin-bottom: 25px;
+  }
+.footer_li{
+	margin-bottom: 18px;
+     }
+  .footer_ul_li_a  a{
+    color:rgba(255, 255, 255, 0.76);
+  }
+.footer_ul_li_a_paddding a{
+  color:rgba(255, 255, 255, 0.76);
+    padding-left: 10px;
+}
+    .footer_icon_23 li a{
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+  }
+  .footer_icon_23 li{
+    margin-top: 30px;
+  } 
+  .footer_h5{
+    color: #ffae00;
+    font-size: 23px;
+   margin-bottom: 25px;
+  }
+.footer_li{
+	margin-bottom: 18px;
+     }
+  .footer_ul_li_a  a{
+    color:rgba(255, 255, 255, 0.76);
+  }
+.footer_ul_li_a_paddding a{
+  color:rgba(255, 255, 255, 0.76);
+    padding-left: 10px;
+}
+  .searchbar{
+  position: relative;
+}
+
+.searchbar input[type="text"]{
+  border: 0;
+  padding: 0;
+  width: 0px;
+  height: 35px;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.searchbar .icon{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+}
+@media (max-width: 991px){
+  .searchbar .icon{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 100%;
+  background: none;
+  border-radius: 3px;
+  color: #fff;
+  transition: all 0.5s 0.3s ease;
+}
+}
+.searchbar .icon i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  cursor: pointer;
+}
+
+.banner img{
+  width: 100%;
+  height: 350px;
+}
+
+.searchbar .icon.active{
+  background: #ffae00;
+  transition: all 0.3s ease;
+}
+
+.searchbar input[type="text"].active{
+  width: 250px;
+  padding: 0 10px;
+  transition: all 0.5s 0.2s ease;
+}
+
+@media screen and (max-width: 730px){
+  .wrapper .navbar{
+    padding: 0px;
+    flex-direction: column;
+    height: 200px;
+    justify-content: center;
+  }
+  .wrapper .navbar .menu ul li{
+    display: block;
+    text-align: center;
+    margin: 10px 0;
+  }
+  .searchbar .icon{
+    margin-right: -20px;
+  }
+}
+
+.matgin_style{
+  margin-top:24px;
+}
+
+
+
 .searchbar{
   position: relative;
 }
@@ -4433,3 +4563,5 @@ content: "\2605";
    content: "\2606";
               }
               
+
+
