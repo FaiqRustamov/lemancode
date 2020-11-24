@@ -19,26 +19,53 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/bootstrap.css" />
+<link rel="stylesheet" href="css/flaticon.css" />
+<link rel="stylesheet" href="css/themify-icons.css" />
+<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+<link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+  integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<!-- main css -->
+<link rel="stylesheet" href="css/style.css" />
 </head>
-
+<style>
+  .input_blog_h2{
+    font-size: 25px;
+    color: #0A5973;
+  }
+  .card_blog{
+    background-color: white; 
+    padding: 20px;
+     position: relative; 
+     top: 70px; 
+     left: 50px;
+  }
+  @media only screen and (max-width: 600px){
+    .card_blog{
+    background-color: white; 
+    padding: 20px;
+     position: relative; 
+     top: 70px; 
+     left: 0px;
+  } 
+  }
+</style>
 <body>
   <!--================ Start Header Menu Area =================-->
   <header class="header_area">
     <div class="main_menu">
-      <div class="search_input" id="search_input_box">
-        <div class="container">
-          <form class="d-flex justify-content-between" method="" action="">
-            <input type="text" class="form-control" id="search_input" placeholder="Search Here" />
-            <button type="submit" class="btn"></button>
-            <span class="ti-close" id="close_search" title="Close Search"></span>
-          </form>
-        </div>
-      </div>
-
-      <nav class="navbar navbar-expand-lg navbar-light nav-background">
-        <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light" style="padding: 0 12px;">
+        <div class="container-fluid navbar_padding">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a class="navbar-brand logo_h" href="index.html"><img src="./img/Asset 1.png" alt="" /></a>
+          <a class="navbar-brand logo_h" href="index.html"><img src="./img/logo.png" alt="" /></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="icon-bar"></span> <span class="icon-bar"></span>
@@ -47,16 +74,23 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
             <ul class="nav navbar-nav menu_nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">BAŞ SƏHİFƏ</a>
+              <li class="nav-item matgin_style">
+                <div class="searchbar">
+                  <input type="text" placeholder="Axtarin...">
+                  <div class="icon">
+                    <i class="fas fa-search"></i>
+                  </div>
+                </div>
               </li>
-
-
+              
               <li class="nav-item">
-                <a class="nav-link" href="./blog.html">BLOQ</a>
+                <a class="nav-link"  href="./blog.html">Bloq</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="login.html">ŞƏXSİ KABİNET</a>
+                <a class="nav-link" href="./login.html">Giriş</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./register.html">Qeydiyyat</a>
               </li>
             </ul>
           </div>
@@ -64,6 +98,22 @@
       </nav>
     </div>
   </header>
+  <!--================ End Header Menu Area =================-->
+  
+    <!--================ Start Home Banner Area =================-->
+    <section style="height: 20px;">
+      <div class="banner_inner">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="banner_content flout-left">
+  
+              </div>
+            </div>
+          </div> 
+        </div>      
+      </div>
+    </section>
   <!--================ End Header Menu Area =================-->
 
   <!--================ Start Home Banner Area =================-->
@@ -79,8 +129,8 @@
 
             
             <article class="row blog_item">
-              <div class="col-md-3">
-                <div class="blog_info text-right">
+              <div class="col-md-4">
+                <div class="blog_info card_blog">
                   <div class="post_tag">
                     <a href="#">Python,</a>
                     <a class="active" href="#">Alqoritmlər,</a>
@@ -95,10 +145,11 @@
                   </ul>
                 </div>
               </div>
-              <div class="col-md-9">
-                <div class="blog_post">
-                  <img src="img/blog/blog-installing-python.png" alt="">
-                  <div class="blog_details">
+              <div class="col-md-8 no-gutters">
+                
+                <div class="blog_post" style="background-color: white; padding:0 6px">
+                  <img src="img/blog.png" alt="">
+                  <div class="blog_details" style="padding: 20px 20px;">
                     <a class="blog_title" href="single-blog.html">
                       <h2>Pythonun quraşdırılması (Windows, macOS, Linux)</h2>
                     </a>
@@ -107,12 +158,21 @@
                        sistemli kompüterlərdə necə quraşdırmağı öyrənəcəksiniz.</p>
                     <a href="single-blog.html" class="blog_btn">Ətraflı</a>
                   </div>
+                  
+                </div>
+                <div style="margin-top:90px;">
+                  <h2 class="input_blog_h2">Bu məqalə haqqında nə düşünürsən?</h2>
+                 <form>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Comment*"></textarea>
+                  <br>
+                  <button type="button" class="btn btn-primary">Göndər</button>
+                 </form>
                 </div>
               </div>
             </article>
            
             
-            <nav class="blog-pagination justify-content-center d-flex">
+            <!-- <nav class="blog-pagination justify-content-center d-flex">
               <ul class="pagination">
                 <li class="page-item">
                   <a href="#" class="page-link" aria-label="Previous">
@@ -134,7 +194,8 @@
                   </a>
                 </li>
               </ul>
-            </nav>
+            </nav> -->
+            
           </div>
         </div>
         <div class="col-lg-4">
@@ -206,7 +267,7 @@
               </ul>
               <div class="br"></div>
             </aside>
-            <aside class="single-sidebar-widget newsletter_widget">
+            <!-- <aside class="single-sidebar-widget newsletter_widget">
               <h4 class="widget_title">Abunə ol</h4>
               <p>
                 Python və onunla əlaqəli texnologiyalar haqqında, həmçinin
@@ -223,15 +284,12 @@
                 </div>
                 <a href="#" class="bbtns">Təsdiqlə</a>
               </div>
-              <!--
-              <p class="text-bottom">You can unsubscribe at any time</p>
-            -->
               <div class="br"></div>
-            </aside>
+            </aside> -->
             <aside class="single-sidebar-widget tag_cloud_widget">
               <h4 class="widget_title">Teqlər</h4>
               <ul class="list">
-                <li><a href="#">Python</a></li>
+                <li ><a href="#">Python</a></li>
                 <li><a href="#">Alqoritmlər</a></li>
                 <li><a href="#">Data strukturları</a></li>
                 <li><a href="#">OOP</a></li>
@@ -244,75 +302,111 @@
       </div>
     </div>
   </section>
+
   <!--================Blog Area =================-->
 
   <!--================ Start footer Area  =================-->
-  <footer class="footer-area section_gap">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 col-md-6 single-footer-widget">
-          <h4>ÜMUMİ</h4>
-          <ul>
-            <li><a href="./about-us.html">Haqqımızda</a></li>
-            <li><a href="./blog.html">Bloq</a></li>
-            <li><a href="./sub-menu.html">Faydalı</a></li>
-          </ul>
-        </div>
-        <div class="col-lg-4 col-md-6 single-footer-widget">
-          <h4>ÖZÜNÜ YOXLA</h4>
-          <ul>
-            <li><a href="./ozunuyoxla.html">Çalışmalar</a></li>
-            <li><a href="./general-quizzes.html">Testlər</a></li>
-            <li><a href="./general-interviews.html">Müsahibə Sualları</a></li>
-          </ul>
-        </div>
-       
-        <div class="col-lg-4 col-md-6 single-footer-widget">
-          <h4>ƏLAQƏ</h4>
-          <ul>
-            <div class="contact-details">
-              <p>Tel: (055) 555 55 55 (Whatsapp)</p>
-              <p>Email: <a href="mailto:info@company.com">info@codeyourself.tech</a></p>
-              <ul class="social-menu">
+
+<!-- Footer -->
+<footer class="page-footer font-small teal pt-4" style="background: rgba(56, 90, 100, 0.92);margin-top: 80px;">
+
+  <!-- Footer Text -->
+  <div class="container-fluid text-center text-md-left navbar_padding"  style="padding-top: 60px;;padding-bottom: 60px;">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÜMUMİ</h5>
   
-                <li class="list-inline-item footer-social"><a  target="_blank" href="https://www.facebook.com/codeyourself1/"><i class="ti-facebook"></i></a></li>
-                <li class="list-inline-item footer-social"><a  target="_blank" href="https://www.instagram.com/code_yourself/"><i class="ti-instagram"></i></a></li>
-                <li class="list-inline-item footer-social"><a  target="_blank" href="https://www.linkedin.com/company/code-yourself/"><i class="ti-linkedin"></i></a></li>
-                <li class="list-inline-item footer-social"><a  target="_blank" href="https://t.me/codeyourself"><i class="fa fa-telegram"></i></a></li>
-                <li class="list-inline-item footer-social"><a  target="_blank" href="https://twitter.com/code_yourself"><i class="ti-twitter"></i></a></li>
-                <!-- <li class="list-inline-item footer-social"><a href="#"><i class="fa fa-linkedin"></i></a></li> -->
-              
-              </ul></br></br>
-            </div>
-          </div>
-        </div>
-        <!-- <div class="col-lg-3 col-sm-12 footer-social">
-          <a href="#"><i class="ti-facebook"></i></a>
-          <a href="#"><i class="ti-twitter"></i></a>
-          <a href="#"><i class="ti-dribbble"></i></a>
-          <a href="#"><i class="ti-linkedin"></i></a>
-        </div> -->
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="center">
-  <div class="container">
-    <div class="login_bar">
-      <span class="login">Email</span>
-      <span class="subscribe_button" onclick="subscribeOnClick()">abunə ol</span>
-      <span class="subscribing"></span>
-      <span class="thanks"> Thank you. You have been subscribed</span>
-    </div>
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="./about-us.html">Haqqımızda</a>
+          </li>
+          <li class="footer_li">
+            <a href="blog.html">Blog</a>
+          </li>
+          <li class="footer_li">
+            <a href="useful.html">Faydalı</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ÖZÜNÜ YOXLA</h5>
+  
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="general-tasks.html">Çalışmalar</a>
+          </li>
+          <li class="footer_li">
+            <a href="general-quizzes.html">Testlər</a>
+          </li>
+          <li class="footer_li">
+            <a href="general-interviews.html">Müsahibə Sualları</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+      <hr class="clearfix w-100 d-md-none pb-3">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mb-md-0 mb-3">
+
+        <!-- Content -->
+        <h5 class="text-uppercase footer_h5">ƏLAQƏ</h5>
+  
+        <ul class="list-unstyled footer_ul_li_a">
+          <li class="footer_li">
+            <a href="#!">Email: info@codeyourself.com</a>
+          </li>
+               <li class="footer_ul_li_a_paddding footer_li" >
+                <a target="_blank" href="https://www.facebook.com/codeyourself1/"><i class="ti-facebook font_size_footer_icon"></i></a>
+    
+                <a target="_blank" href="https://www.instagram.com/code_yourself/"><i class="ti-instagram font_size_footer_icon"></i></a>
+    
+                <a target="_blank" href="https://www.linkedin.com/company/code-yourself/"><i class="ti-linkedin font_size_footer_icon"></i></a> 
+    
+                <a target="_blank" href="https://t.me/codeyourself"><i class="fa fa-telegram font_size_footer_icon"></i></a> 
+    
+                <a target="_blank" href="https://twitter.com/code_yourself"><i class="ti-twitter font_size_footer_icon"></i></a> 
+              </li>
+          <hr class="clearfix w-100 d-md-none pb-3">
+        </ul> 
+      </div>
+      <!-- Grid column -->
+      
+          <!-- Grid column -->
+          
+    
+
+
+    
+    <!-- Grid row -->
+
   </div>
-  <div class="row footer-bottom d-flex justify-content-between">
-    <p class="col-lg-12 col-sm-12 footer-text m-0 text-white">
+  <!-- Footer Text -->
+
  
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-      Azərbaycanda hazırlanıb. Hazırlanarkən sevgidən istifadə olunub. &copy;
-      <script>document.write(new Date().getFullYear());</script> 
-      <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-    </p>
+
+</footer>
+<!-- Footer -->
+
+<footer>
+   <!-- Copyright -->
+  <div class="footer-copyright text-center py-3" style="background: #385A64; color: white;">  <i class="fa fa-heart" style="color:red;font-size: 18px;"></i> ilə Azərbaycanda hazırlanıb ©2021
   </div>
-</div>
+  <!-- Copyright -->
   </footer>
   <!--================ End footer Area  =================-->
 
@@ -324,6 +418,12 @@
   src="https://code.jquery.com/jquery-3.5.1.js"
   integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
   crossorigin="anonymous"></script>  <script src="js/popper.js"></script>
+  <script>
+    $(".fa-search").click(function(){
+       $(".icon").toggleClass("active");
+      $("input[type='text']").toggleClass("active");
+    });
+      </script>
   <script src="js/bootstrap.min.js"></script>
   <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
   <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
